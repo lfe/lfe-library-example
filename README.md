@@ -26,3 +26,9 @@ will be able to do the following:
 {% highlight cl %}
 {% endhighlight %}
 
+Note that there is a unit testing library that has been written for LFE. In
+order to use it as designed, a new feature needs to be added to LFE that
+supports including files across projects. If this feature does not land in LFE,
+the <a href="https://github.com/lfe/lfeunit">lfeunit project</a> will be
+readjusted to not use include files, and instead simple support `import`
+functionality.
