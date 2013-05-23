@@ -1,8 +1,0 @@
-{application,lfe_example,
-             [{description,[]},
-              {vsn,"1"},
-              {registered,[]},
-              {applications,[kernel,stdlib]},
-              {mod,{lfe_example_app,[]}},
-              {env,[]},
-              {modules,[lfe_example_app,lfe_example_server,lfe_example_sup]}]}.
