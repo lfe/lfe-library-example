@@ -1,12 +1,28 @@
-# LFE Example #
+# LFE Library Example
 
-This is a tiny example OTP app written in LFE. See the Keynote presentation for some minimal info, then try:
+This is a tiny example of an LFE library. To see an example of an OTP app, be
+sure to visit
+<a href="https://github.com/lfe/lfe-service-example">lfe-service-example</a>.
 
-    rebar compile && ./start.sh
+This example assumes that you have
+<a href="https://github.com/rebar/rebar">rebar</a> installed in your `$PATH`.
 
-Then, in the Erlang shell:
+To use, simply do the following:
 
-    application:start(lfe_example), %% Start the application
-    lfe_example_server:fib(5).      %% Get a Fibonacci
+{% highlight bash %}
+    $ rebar compile
+    $ make shell
+{% endhighlight %}
 
-Enjoy.
+When the shell fires up, you can then load the module:
+
+{% highlight cl %}
+{% endhighlight %}
+
+To use from another project, simple add lfe-library-example to your `deps` in
+your rebar config file, and after you `rebar compile` for that project, you
+will be able to do the following:
+
+{% highlight cl %}
+{% endhighlight %}
+
