@@ -13,20 +13,13 @@ get-deps:
 	for DIR in $(wildcard $(DEPS)/*); do \
 	cd $$DIR; git pull; cd - ; done
 
-clean-ebin:
-	#-rm -f $(OUT_DIR)/*.beam
-
-clean-eunit:
-	-rm -rf $(TEST_OUT_DIR)
-
 compile: get-deps clean-ebin
 	rebar compile
-	#ERL_LIBS=$(ERL_LIBS) $(LFEC) -o $(OUT_DIR) $(SOURCE_DIR)/*.lfe
 
 shell: compile
 	ERL_LIBS=$(ERL_LIBS) $(LFE) -pa $(TEST_OUT_DIR)
 
-clean: clean-ebin clean-eunit
+clean:
 	rebar clean
 
 push:
