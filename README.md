@@ -9,22 +9,22 @@ This example assumes that you have
 
 To use, simply do the following:
 
-{% highlight bash %}
+```bash
     $ rebar compile
     $ make shell
-{% endhighlight %}
+```
 
 When the shell fires up, you can then load the module:
 
-{% highlight cl %}
-{% endhighlight %}
+```common-lisp
+```
 
 To use from another project, simple add lfe-library-example to your `deps` in
 your rebar config file, and after you `rebar compile` for that project, you
 will be able to do the following:
 
-{% highlight cl %}
-{% endhighlight %}
+```common-lisp
+```
 
 Note that there is a unit testing library that has been written for LFE. In
 order to use it as designed, a new feature needs to be added to LFE that
